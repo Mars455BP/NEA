@@ -8,14 +8,14 @@ namespace ConsoleForms
 {
     class Program
     {
-
+        
 
         public static int itemstopick;
         public static string[] strList = new string[999];
 
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Hello");
             Console.WriteLine("Debug Log for Mark Adams' NEA - Refined Picking App");
             //Creating Items
             Console.WriteLine("Creating Items");
