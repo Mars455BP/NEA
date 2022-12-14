@@ -29,18 +29,20 @@ namespace ConsoleForms
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("Next Button clicked");
             progressBar1.Maximum = Program.itemstopick;
 
             progressBar1.Minimum = 0;
             if (progressBar1.Value >= progressBar1.Maximum)
             {
                 Console.Beep();
+                Console.WriteLine("Addition failed- max reached");
             }
             else
             {
                 x++;
                 progressBar1.Value++;
-                this.Milk.BackColor = System.Drawing.Color.Blue;
+                Console.WriteLine("Value progressed");
             }
 
 
@@ -126,6 +128,11 @@ namespace ConsoleForms
         }
 
         private void checkBox14_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Eggs_CheckedChanged(object sender, EventArgs e)
         {
 
         }

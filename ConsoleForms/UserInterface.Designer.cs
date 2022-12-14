@@ -168,6 +168,7 @@
             this.Eggs.Size = new System.Drawing.Size(6, 6);
             this.Eggs.TabIndex = 10;
             this.Eggs.UseVisualStyleBackColor = false;
+            this.Eggs.CheckedChanged += new System.EventHandler(this.Eggs_CheckedChanged);
             // 
             // Apples
             // 
@@ -366,6 +367,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(479, 785);
             this.Controls.Add(this.DogFood);
             this.Controls.Add(this.DogToys);
@@ -387,6 +390,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserInterface";
             this.Text = "UserInterface";

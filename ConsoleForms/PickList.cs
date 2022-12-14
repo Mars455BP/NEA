@@ -17,6 +17,10 @@ namespace ConsoleForms
         public PickList()
         {
             InitializeComponent();
+            for (int i = 0; i < Program.strList.Length; i++)
+            {
+                checkedListBox1.Items.Add(Program.strList[i].ToString(), false);
+            }
             CountOfBoxes = this.checkedListBox1.Items.Count;
             this.CenterToParent();
             for (int i = 0; i <= UserInterface.x; i++)
