@@ -16,10 +16,12 @@ namespace ConsoleForms
         public int CountOfBoxes;
         public PickList()
         {
+            
             InitializeComponent();
             for (int i = 0; i < Program.strList.Length; i++)
             {
                 checkedListBox1.Items.Add(Program.strList[i].ToString(), false);
+                Console.WriteLine(Program.strList[i].ToString() + " added to Pick List");
             }
             CountOfBoxes = this.checkedListBox1.Items.Count;
             this.CenterToParent();
