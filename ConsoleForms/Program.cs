@@ -26,7 +26,7 @@ namespace ConsoleForms
             item eggs = new item(77, 425, "Eggs");
 
             //Fruit and Veg
-            item tomatoes = new item(136, 504, "Tomatoes");
+            item tomatoes = new item(102, 393, "Tomatoes");
             item apples = new item(136, 389, "Apples");
             item bananas = new item(185, 363, "Bananas");
 

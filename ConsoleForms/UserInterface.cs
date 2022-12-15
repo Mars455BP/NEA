@@ -19,24 +19,53 @@ namespace ConsoleForms
         {
             InitializeComponent();
             //Changing colour of specified items
-            for (int i = 0; i < Program.itemstopick-1; i++)
+            for (int i = 0; i < Program.itemstopick; i++)
             {
+                Console.WriteLine(Program.strList[i] +"Is the "+i + " item");
                 switch (Program.strList[i])
                 {
                     case ("Eggs"):
-                        Eggs.ForeColor = Color.Green;
+                        Eggs.BackColor = Color.Green;
+                        
                         break;
                     case ("Cheese"):
-                        Cheese.ForeColor = Color.Green;
+                        Cheese.BackColor = Color.Green;
                         break;
                     case ("Milk"):
-                        Milk.ForeColor = Color.Green;
+                        Milk.BackColor = Color.Green;
                         break;
                     case ("Tomatoes"):
-                        Tomatoes.ForeColor= Color.Green;
+                        Tomatoes.BackColor = Color.Green;
                         break;
                     case ("Apples"):
-                        Apples.ForeColor = Color.Green;
+                        Apples.BackColor = Color.Green;
+                        break;
+                    case ("Bananas"):
+                        Bananas.BackColor = Color.Green;
+                        break;
+                    case ("Baked Beans"):
+                        BakedBeans.BackColor = Color.Green;
+                        break;
+                    case ("Chopped Tomatoes"):
+                        ChoppedTomatoes.BackColor= Color.Green;
+                        break;
+                    case ("Chilli Powder"):
+                        ChilliPowder.BackColor= Color.Green;
+                        break;
+                    case ("Frozen Pizza"):
+                        FrozenPizza.BackColor= Color.Green;
+                        break;
+                    case ("Ice Cream"):
+                        IceCream.BackColor= Color.Green;
+                        break;
+                    case ("Cat Food"):
+                        CatFood.BackColor= Color.Green;
+                        break;
+                    case ("Dog Toys"):
+                        DogToys.BackColor= Color.Green;
+                        break;
+                    case ("Dog Food"):
+                        DogFood.BackColor = Color.Green;
                         break;
                     default:
                         break;
@@ -157,6 +186,11 @@ namespace ConsoleForms
         }
 
         private void Eggs_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
 
         }
