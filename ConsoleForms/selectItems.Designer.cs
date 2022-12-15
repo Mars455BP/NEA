@@ -38,7 +38,6 @@
             this.checkedListBox1.Items.AddRange(new object[] {
             "Cheese",
             "Milk",
-            "Bread",
             "Eggs",
             "Tomatoes",
             "Apples",
@@ -51,17 +50,20 @@
             "Cat Food",
             "Dog Toys",
             "Dog Food"});
-            this.checkedListBox1.Location = new System.Drawing.Point(12, -1);
+            this.checkedListBox1.Location = new System.Drawing.Point(9, -1);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 276);
+            this.checkedListBox1.Size = new System.Drawing.Size(91, 214);
             this.checkedListBox1.TabIndex = 0;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(12, 293);
+            this.button1.Location = new System.Drawing.Point(9, 238);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 1;
             this.button1.Text = "Submit ";
             this.button1.UseVisualStyleBackColor = true;
@@ -69,11 +71,12 @@
             // 
             // selectItems
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(148, 354);
+            this.ClientSize = new System.Drawing.Size(120, 288);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkedListBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "selectItems";
             this.Text = "Form1";
             this.ResumeLayout(false);

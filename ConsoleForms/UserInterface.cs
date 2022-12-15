@@ -18,8 +18,32 @@ namespace ConsoleForms
         public UserInterface()
         {
             InitializeComponent();
+            //Changing colour of specified items
+            for (int i = 0; i < Program.itemstopick-1; i++)
+            {
+                switch (Program.strList[i])
+                {
+                    case ("Eggs"):
+                        Eggs.ForeColor = Color.Green;
+                        break;
+                    case ("Cheese"):
+                        Cheese.ForeColor = Color.Green;
+                        break;
+                    case ("Milk"):
+                        Milk.ForeColor = Color.Green;
+                        break;
+                    case ("Tomatoes"):
+                        Tomatoes.ForeColor= Color.Green;
+                        break;
+                    case ("Apples"):
+                        Apples.ForeColor = Color.Green;
+                        break;
+                    default:
+                        break;
+                }
+            }
             
-            
+
         }
 
         private void UserInterface_Load(object sender, EventArgs e)
