@@ -21,7 +21,7 @@ namespace ConsoleForms
             //Changing colour of specified items
             for (int i = 0; i < Program.itemstopick; i++)
             {
-                Console.WriteLine(Program.strList[i] +"Is the "+i + " item");
+                Console.WriteLine(Program.strList[i] +" is the "+i + " item");
                 switch (Program.strList[i])
                 {
                     case ("Eggs"):
