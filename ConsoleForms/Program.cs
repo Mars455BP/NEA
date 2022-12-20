@@ -15,8 +15,6 @@ namespace ConsoleForms
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
-            Console.WriteLine("Welcome to NEA");
             Console.WriteLine("Debug Log for Mark Adams' NEA - Refined Picking App");
             //Creating Items
             Console.WriteLine("Creating Items");
