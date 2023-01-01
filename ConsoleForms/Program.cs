@@ -19,29 +19,29 @@ namespace ConsoleForms
             //Creating Items
             Console.WriteLine("Creating Items");
             //Dairy
-            item cheese = new item(77, 389, "Cheese");
-            item milk = new item(127, 326, "Milk");
-            item eggs = new item(77, 425, "Eggs");
+            item cheese = new item(1, "Cheese");
+            item milk = new item(1, "Milk");
+            item eggs = new item(1, "Eggs");
 
             //Fruit and Veg
-            item tomatoes = new item(102, 393, "Tomatoes");
-            item apples = new item(136, 389, "Apples");
-            item bananas = new item(185, 363, "Bananas");
+            item tomatoes = new item(2, "Tomatoes");
+            item apples = new item(2, "Apples");
+            item bananas = new item(2, "Bananas");
 
             //Herbs, Spices and Tins
-            item garlic = new item(244, 389, "Garlic");
-            item chilliPowder = new item(244, 358, "Chilli Powder");
-            item choppedTomatoes = new item(194, 325, "Chopped Tomatoes");
-            item bakedBeans = new item(194, 273, "Baked Beans");
+            item garlic = new item(3, "Garlic");
+            item chilliPowder = new item(3, "Chilli Powder");
+            item choppedTomatoes = new item(3, "Chopped Tomatoes");
+            item bakedBeans = new item(3, "Baked Beans");
 
             //Frozen
-            item frozenPizza = new item(252, 308, "Frozen Pizza");
-            item iceCream = new item(301, 389, "Ice Cream");
+            item frozenPizza = new item(4, "Frozen Pizza");
+            item iceCream = new item(4, "Ice Cream");
 
             //Pet
-            item dogFood = new item(359, 298, "Dog Food");
-            item dogToys = new item(359, 364, "Dog Toys");
-            item catFood = new item(310, 389, "Cat Food");
+            item dogFood = new item(5, "Dog Food");
+            item dogToys = new item(5, "Dog Toys");
+            item catFood = new item(5, "Cat Food");
 
             //Array containing items to be searched for in this shop
             Console.WriteLine("Creating toPick");

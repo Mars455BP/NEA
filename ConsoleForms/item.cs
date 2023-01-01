@@ -8,13 +8,11 @@ namespace ConsoleForms
 {
     internal class item
     {
-        public int x;
-        public int y;
+        public int aisle;
         public string name;
-        public item(int iX, int iY, string iName)
+        public item(int iAisle, string iName)
         {
-            x = iX;
-            y = iY;
+            aisle = iAisle;
             name = iName;
         }
     }
