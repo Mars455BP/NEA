@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleForms
 {
-    internal class item
+    public class item
     {
         public int aisle;
         public string name;

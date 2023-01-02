@@ -11,7 +11,7 @@ namespace ConsoleForms
         
 
         public static int itemstopick;
-        public static string[] strList = new string[999];
+        public static item[] strList = new item[999];
 
         static void Main(string[] args)
         {
@@ -57,11 +57,13 @@ namespace ConsoleForms
             Console.WriteLine("Pick List being created");
             PickList PL = new PickList();
             itemstopick = selectList.returnList().Length;
+            Path path = new Path(strList);
             Console.WriteLine("Creating user interface");
             //Creating User Interface
             UserInterface UI = new UserInterface();
             UI.ShowDialog();
             Console.WriteLine("Showing UI");
+            
         }
     }
 }

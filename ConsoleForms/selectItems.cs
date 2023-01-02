@@ -31,9 +31,10 @@ namespace ConsoleForms
         {
             string[] str = new string[returnList().Length];
             str = returnList();
-            foreach (string x in str)
+            
+            for (int i = 0; i < str.Count(); i++)
             {
-                Console.Write(x + ", ");
+                Console.WriteLine(str[i] + ", ");
             }
             this.Close();
         }

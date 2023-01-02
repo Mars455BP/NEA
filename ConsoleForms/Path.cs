@@ -12,8 +12,19 @@ namespace ConsoleForms
         string[] path = new string[999];
         public Path(string[] list)
         {
-            list = strList;
-
+            strList = list;
+            Console.Write("The List Order: ");
+            for (int i = 0; i < strList.Count(); i++)
+            {
+                Console.Write(strList[i] + " ,");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < strList.Count(); i++)
+            {
+                   
+            }
         }
+
+        
     }
 }

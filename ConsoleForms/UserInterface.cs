@@ -22,7 +22,7 @@ namespace ConsoleForms
             for (int i = 0; i < Program.itemstopick; i++)
             {
                 Console.WriteLine(Program.strList[i] +" is the "+i + " item");
-                switch (Program.strList[i])
+                switch (Program.strList[i].name)
                 {
                     case ("Eggs"):
                         Eggs.BackColor = Color.Green;
