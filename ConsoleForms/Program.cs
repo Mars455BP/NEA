@@ -11,7 +11,7 @@ namespace ConsoleForms
         
 
         public static int itemstopick;
-        public static item[] strList = new item[999];
+        public static string[] strList = new string[999];
 
         static void Main(string[] args)
         {

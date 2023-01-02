@@ -10,6 +10,7 @@ namespace ConsoleForms
     {
         string[] strList = new string[999];
         string[] path = new string[999];
+        int aisleNum;
         public Path(string[] list)
         {
             strList = list;
@@ -21,10 +22,26 @@ namespace ConsoleForms
             Console.WriteLine();
             for (int i = 0; i < strList.Count(); i++)
             {
-                   
+                Console.WriteLine(strList[i]);
             }
         }
-
+        int Aisle(string str)
+        {
+            switch (str)
+            {
+                case "Eggs":
+                case "Milk":
+                case "Cheese":
+                    aisleNum = 1;
+                    break;
+                case "Tomato":
+                case "Banana":
+                case "Apples":
+                    aisleNum = 2;
+                    break;
+            }
+            return 0;
+        }
         
     }
 }
