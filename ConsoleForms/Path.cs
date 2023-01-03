@@ -24,6 +24,29 @@ namespace ConsoleForms
             {
                 Console.WriteLine(strList[i]);
             }
+            for (int i = 0; i < strList.Count(); i++)
+            {
+                if (Aisle(strList[i])==1)
+                {
+                    while (checkAdjacent(strList, i)== false)
+                    {
+
+                    }
+                    
+                }
+            }
+        }
+
+        bool checkAdjacent(string[] strList, int x)
+        {
+            if (Aisle(strList[x]) == Aisle(strList[x+1]))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         int Aisle(string str)
         {
@@ -60,7 +83,7 @@ namespace ConsoleForms
                     break;
 
             }
-            return 0;
+            return aisleNum;
         }
         
     }
