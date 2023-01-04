@@ -115,35 +115,35 @@ namespace ConsoleForms
                 switch (str)
                 {
                     case "Milk":
-                        return values.Milk.Location.X;
+                        return values.Milk.Location.Y;
                     case "Cheese":
-                        return values.Cheese.Location.X;
+                        return values.Cheese.Location.Y;
                     case "Eggs":
-                        return values.Eggs.Location.X;
+                        return values.Eggs.Location.Y;
                     case "Apples":
-                        return values.Apples.Location.X;
+                        return values.Apples.Location.Y;
                     case "Bananas":
-                        return values.Bananas.Location.X;
+                        return values.Bananas.Location.Y;
                     case "Tomatoes":
-                        return values.Tomatoes.Location.X;
+                        return values.Tomatoes.Location.Y;
                     case "Baked Beans":
-                        return values.BakedBeans.Location.X;
+                        return values.BakedBeans.Location.Y;
                     case "Chopped Tomatoes":
-                        return values.ChoppedTomatoes.Location.X;
+                        return values.ChoppedTomatoes.Location.Y;
                     case "Garlic":
-                        return values.Garlic.Location.X;
+                        return values.Garlic.Location.Y;
                     case "Chilli Powder":
-                        return values.ChilliPowder.Location.X;
+                        return values.ChilliPowder.Location.Y;
                     case "Frozen Pizza":
-                        return values.FrozenPizza.Location.X;
+                        return values.FrozenPizza.Location.Y;
                     case "Ice Cream":
-                        return values.IceCream.Location.X;
+                        return values.IceCream.Location.Y;
                     case "Dog Food":
-                        return values.DogFood.Location.X;
+                        return values.DogFood.Location.Y;
                     case "Dog Toys":
-                        return values.DogToys.Location.X;
+                        return values.DogToys.Location.Y;
                     case "Cat Food":
-                        return values.CatFood.Location.X;
+                        return values.CatFood.Location.Y;
                     default:
                         return 0;
                 }
