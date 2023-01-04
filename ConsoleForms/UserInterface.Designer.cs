@@ -429,12 +429,12 @@
         public System.Windows.Forms.CheckBox Milk;
         public System.Windows.Forms.CheckBox Cheese;
         public System.Windows.Forms.CheckBox Eggs;
-        public System.Windows.Forms.CheckBox Apples;
-        public System.Windows.Forms.CheckBox Tomatoes;
-        public System.Windows.Forms.CheckBox Bananas;
-        public System.Windows.Forms.CheckBox BakedBeans;
-        public System.Windows.Forms.CheckBox Garlic;
-        public System.Windows.Forms.CheckBox ChilliPowder;
+        public  System.Windows.Forms.CheckBox Apples;
+        public  System.Windows.Forms.CheckBox Tomatoes;
+        public  System.Windows.Forms.CheckBox Bananas;
+        public  System.Windows.Forms.CheckBox BakedBeans;
+        public  System.Windows.Forms.CheckBox Garlic;
+        public  System.Windows.Forms.CheckBox ChilliPowder;
         public System.Windows.Forms.CheckBox ChoppedTomatoes;
         public System.Windows.Forms.CheckBox IceCream;
         public System.Windows.Forms.CheckBox CatFood;

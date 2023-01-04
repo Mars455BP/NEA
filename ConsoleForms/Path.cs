@@ -55,14 +55,55 @@ namespace ConsoleForms
                     {
                         if (Aisle(strList[i-1]) == 1)
                         {
+                            
                             Console.WriteLine("Next in new list is "+strList[i]);
                             count++;
+                        }
+                        else
+                        {
+                            Console.WriteLine();
                         }
                     }
                 }
             }
         }
+        int locationChecker(char xy, string[] strList, int x)
+        {
+            UserInterface values = new UserInterface();
+            int loc;
+            if (xy == 'x')
+            {
+                switch (strList[x])
+                {
+                    case "Milk":
+                        return values.Milk.Location.X;
+                    case "Cheese":
+                        return values.Cheese.Location.X;
+                    default:
+                        break;
+                }
+            }
+            else
+            {
+                switch (strList[x])
+                {
+                    case "milk":
 
+                    default:
+                        break;
+                }
+            }
+           
+            
+        }
+        string adjacentPlus(string[] strList, int x)
+        {
+            if (Aisle(strList[x] )== Aisle (strList[x-1]))
+            {
+                return strList[x++];
+            }
+            return null;
+        }
         bool checkAdjacent(string[] strList, int x)
         {
             if (Aisle(strList[x]) == Aisle(strList[x+1]))
