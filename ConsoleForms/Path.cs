@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleForms
 {
-    class Path 
+    class Path
     {
         string[] strList = new string[999];
         string[] path = new string[999];
@@ -27,7 +27,7 @@ namespace ConsoleForms
             }
             for (int i = 0; i < strList.Count(); i++)
             {
-                if (Aisle(strList[i])==1)
+                if (Aisle(strList[i]) == 1)
                 {
                     if (checkAdjacent(strList, i) == false)
                     {
@@ -41,22 +41,22 @@ namespace ConsoleForms
                         path[count] = strList[i];
                         count++;
                     }
-                    
+
                 }
-                if(Aisle(strList[i])==2)
+                if (Aisle(strList[i]) == 2)
                 {
-                    if(checkAdjacent(strList, i) == false)
+                    if (checkAdjacent(strList, i) == false)
                     {
-                        Console.WriteLine("Next in new list is: "+strList[i]);
+                        Console.WriteLine("Next in new list is: " + strList[i]);
                         path[count] = strList[i];
                         count++;
                     }
                     else
                     {
-                        if (Aisle(strList[i-1]) == 1)
+                        if (Aisle(strList[i - 1]) == 1)
                         {
-                            
-                            Console.WriteLine("Next in new list is "+strList[i]);
+
+                            Console.WriteLine("Next in new list is " + strList[i]);
                             count++;
                         }
                         else
@@ -67,91 +67,147 @@ namespace ConsoleForms
                 }
             }
         }
-        int locationChecker(char xy, string[] strList, int x)
+        int locationChecker(char xy, string str)
         {
             UserInterface values = new UserInterface();
-            int loc;
             if (xy == 'x')
             {
-                switch (strList[x])
+                switch (str)
                 {
                     case "Milk":
                         return values.Milk.Location.X;
                     case "Cheese":
                         return values.Cheese.Location.X;
+                    case "Eggs":
+                        return values.Eggs.Location.X;
+                    case "Apples":
+                        return values.Apples.Location.X;
+                    case "Bananas":
+                        return values.Bananas.Location.X;
+                    case "Tomatoes":
+                        return values.Tomatoes.Location.X;
+                    case "Baked Beans":
+                        return values.BakedBeans.Location.X;
+                    case "Chopped Tomatoes":
+                        return values.ChoppedTomatoes.Location.X;
+                    case "Garlic":
+                        return values.Garlic.Location.X;
+                    case "Chilli Powder":
+                        return values.ChilliPowder.Location.X;
+                    case "Frozen Pizza":
+                        return values.FrozenPizza.Location.X;
+                    case "Ice Cream":
+                        return values.IceCream.Location.X;
+                    case "Dog Food":
+                        return values.DogFood.Location.X;
+                    case "Dog Toys":
+                        return values.DogToys.Location.X;
+                    case "Cat Food":
+                        return values.CatFood.Location.X;
+
                     default:
-                        break;
+                        return 0;
                 }
             }
+
             else
             {
-                switch (strList[x])
+                switch (str)
                 {
-                    case "milk":
-
+                    case "Milk":
+                        return values.Milk.Location.X;
+                    case "Cheese":
+                        return values.Cheese.Location.X;
+                    case "Eggs":
+                        return values.Eggs.Location.X;
+                    case "Apples":
+                        return values.Apples.Location.X;
+                    case "Bananas":
+                        return values.Bananas.Location.X;
+                    case "Tomatoes":
+                        return values.Tomatoes.Location.X;
+                    case "Baked Beans":
+                        return values.BakedBeans.Location.X;
+                    case "Chopped Tomatoes":
+                        return values.ChoppedTomatoes.Location.X;
+                    case "Garlic":
+                        return values.Garlic.Location.X;
+                    case "Chilli Powder":
+                        return values.ChilliPowder.Location.X;
+                    case "Frozen Pizza":
+                        return values.FrozenPizza.Location.X;
+                    case "Ice Cream":
+                        return values.IceCream.Location.X;
+                    case "Dog Food":
+                        return values.DogFood.Location.X;
+                    case "Dog Toys":
+                        return values.DogToys.Location.X;
+                    case "Cat Food":
+                        return values.CatFood.Location.X;
                     default:
-                        break;
+                        return 0;
+                }
+
+
+            }
+        }
+            string adjacentPlus(string[] strList, int x)
+            {
+                if (Aisle(strList[x]) == Aisle(strList[x - 1]))
+                {
+                    return strList[x++];
+                }
+                return null;
+            }
+            bool checkAdjacent(string[] strList, int x)
+            {
+                if (Aisle(strList[x]) == Aisle(strList[x + 1]))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
                 }
             }
-           
-            
-        }
-        string adjacentPlus(string[] strList, int x)
-        {
-            if (Aisle(strList[x] )== Aisle (strList[x-1]))
+            int Aisle(string str)
             {
-                return strList[x++];
-            }
-            return null;
-        }
-        bool checkAdjacent(string[] strList, int x)
-        {
-            if (Aisle(strList[x]) == Aisle(strList[x+1]))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-        int Aisle(string str)
-        {
-            switch (str)
-            {
-                case "Eggs":
-                case "Milk":
-                case "Cheese":
-                    aisleNum = 1;
-                    break;
-                case "Tomato":
-                case "Banana":
-                case "Apples":
-                    aisleNum = 2;
-                    break;
-                case "Chopped Tomatoes":
-                case "Baked Beans":
-                case "Chilli Powder":
-                case "Garlic":
-                    aisleNum = 3;
-                    break;
-                case "Frozen Pizza":
-                case "Ice Cream":
-                    aisleNum = 4;
-                    break;
-                case "Dog Toys":
-                case "Dog Food":
-                case "Cat Food":
-                    aisleNum = 5;
-                    break;
-                default:
-                    aisleNum = 0;
-                    Console.WriteLine("Error- item not found");
-                    break;
+                switch (str)
+                {
+                    case "Eggs":
+                    case "Milk":
+                    case "Cheese":
+                        aisleNum = 1;
+                        break;
+                    case "Tomato":
+                    case "Banana":
+                    case "Apples":
+                        aisleNum = 2;
+                        break;
+                    case "Chopped Tomatoes":
+                    case "Baked Beans":
+                    case "Chilli Powder":
+                    case "Garlic":
+                        aisleNum = 3;
+                        break;
+                    case "Frozen Pizza":
+                    case "Ice Cream":
+                        aisleNum = 4;
+                        break;
+                    case "Dog Toys":
+                    case "Dog Food":
+                    case "Cat Food":
+                        aisleNum = 5;
+                        break;
+                    default:
+                        aisleNum = 0;
+                        Console.WriteLine("Error- item not found");
+                        break;
 
+                }
+                return aisleNum;
             }
-            return aisleNum;
+
         }
-        
     }
-}
+
