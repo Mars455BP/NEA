@@ -11,6 +11,7 @@ namespace ConsoleForms
         string[] strList = new string[999];
         string[] path = new string[999];
         int aisleNum;
+        int count = 0;
         public Path(string[] list)
         {
             strList = list;
@@ -28,11 +29,36 @@ namespace ConsoleForms
             {
                 if (Aisle(strList[i])==1)
                 {
-                    while (checkAdjacent(strList, i)== false)
+                    if (checkAdjacent(strList, i) == false)
                     {
-
+                        Console.WriteLine("First in new list is: " + strList[i]);
+                        path[count] = strList[i];
+                        count++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("First in new list is: " + strList[i]);
+                        path[count] = strList[i];
+                        count++;
                     }
                     
+                }
+                if(Aisle(strList[i])==2)
+                {
+                    if(checkAdjacent(strList, i) == false)
+                    {
+                        Console.WriteLine("Next in new list is: "+strList[i]);
+                        path[count] = strList[i];
+                        count++;
+                    }
+                    else
+                    {
+                        if (Aisle(strList[i-1]) == 1)
+                        {
+                            Console.WriteLine("Next in new list is "+strList[i]);
+                            count++;
+                        }
+                    }
                 }
             }
         }
