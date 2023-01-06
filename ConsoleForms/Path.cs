@@ -67,6 +67,13 @@ namespace ConsoleForms
                 }
             }
         }
+        string[] sortArr(string[] str)
+        {
+            for (int i = 0; i < str.Length; i++)
+            {
+
+            }
+        }
         int locationChecker(char xy, string str)
         {
             UserInterface values = new UserInterface();
