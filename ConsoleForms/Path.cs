@@ -69,13 +69,14 @@ namespace ConsoleForms
         }
         string[] sortArr(string[] strArr, bool isUp)
         {
-           string[] newStr = new string[strArr.Length];
+            string[] newStr = new string[strArr.Length];
+            string[] checkStr = new string[strArr.Length];
             if (isUp)
             {
                 for (int i = 0; i < strArr.Length; i++)
                 {
                     locationChecker('y', strArr[i]);
-                    
+                    checkStr[i] = strArr[i];
                 }
             }
             return null;
