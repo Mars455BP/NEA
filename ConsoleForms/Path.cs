@@ -71,14 +71,23 @@ namespace ConsoleForms
         {
             string[] newStr = new string[strArr.Length];
             string[] checkStr = new string[strArr.Length];
+            string temp;
             if (isUp)
             {
-                for (int i = 0; i < strArr.Length; i++)
+                for (int j = 0; j <= strArr.Length - 2; j++)
                 {
-                    locationChecker('y', strArr[i]);
-                    checkStr[i] = strArr[i];
+                    for (int i = 0; i <= strArr.Length - 2; i++)
+                    {
+                        if (locationChecker('y', strArr[i]) > locationChecker('y', strArr[i+1]))
+                        {
+                            temp = strArr[i + 1];
+                            strArr[i + 1] = strArr[i];
+                            strArr[i] = strArr[locationChecker('y', temp)];
+                        }
+                    }
                 }
             }
+            
             return null;
         }
         int locationChecker(char xy, string str)
