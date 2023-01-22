@@ -63,7 +63,7 @@ namespace ConsoleForms
             UserInterface UI = new UserInterface();
             UI.ShowDialog();
             Console.WriteLine("Showing UI");
-            
+            Path path1 = new Path(strList);
         }
     }
 }

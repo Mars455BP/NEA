@@ -14,6 +14,8 @@ namespace ConsoleForms
         int count = 0;
         public Path(string[] list)
         {
+            printArr(list);
+            Console.WriteLine("space");
             strList = list;
             Console.Write("The List Order: ");
             for (int i = 0; i < strList.Count(); i++)
@@ -21,10 +23,7 @@ namespace ConsoleForms
                 Console.Write(strList[i] + " ,");
             }
             Console.WriteLine();
-            for (int i = 0; i < strList.Count(); i++)
-            {
-                Console.WriteLine(strList[i]);
-            }
+            printArr(strList);
             for (int i = 0; i < strList.Count(); i++)
             {
                 if (Aisle(strList[i]) == 1)
@@ -56,7 +55,15 @@ namespace ConsoleForms
                         if (Aisle(strList[i - 1]) == 1)
                         {
 
-                            Console.WriteLine("Next in new list is " + strList[i]);
+                            string[] aisleArr = new string[999];
+                            for (int j = 0; j < strList.Count(); j++)
+                            {
+                                if (Aisle(strList[i])== 2)
+                                {
+
+                                }
+                            }
+
                             count++;
                         }
                         else
@@ -87,8 +94,19 @@ namespace ConsoleForms
                     }
                 }
             }
+            else
+            {
+
+            }
             
             return null;
+        }
+        void printArr(string[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
         }
         int locationChecker(char xy, string str)
         {
