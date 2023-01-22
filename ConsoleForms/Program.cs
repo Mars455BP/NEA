@@ -13,6 +13,14 @@ namespace ConsoleForms
         public static int itemstopick;
         public static string[] strList = new string[999];
 
+        static void displayArray(string[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Debug Log for Mark Adams' NEA - Refined Picking App");
@@ -64,6 +72,10 @@ namespace ConsoleForms
             UI.ShowDialog();
             Console.WriteLine("Showing UI");
             Path path1 = new Path(strList);
+            Console.WriteLine("Using DISPLAY ARRAY");
+            displayArray(path1.path);
+            Console.ReadKey();
+            
         }
     }
 }

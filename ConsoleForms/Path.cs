@@ -9,7 +9,7 @@ namespace ConsoleForms
     class Path
     {
         string[] strList = new string[999];
-        string[] path = new string[999];
+        public string[] path = new string[999];
         int aisleNum;
         int count = 0;
         int count2 = 0;
