@@ -12,6 +12,7 @@ namespace ConsoleForms
         string[] path = new string[999];
         int aisleNum;
         int count = 0;
+        int count2 = 0;
         public Path(string[] list)
         {
             printArr(list);
@@ -60,11 +61,16 @@ namespace ConsoleForms
                             {
                                 if (Aisle(strList[j])== 2)
                                 {
-
+                                    aisleArr[count] = strList[j];
                                 }
+                                count2++;
                             }
-
+                            sortArr(aisleArr, true);
                             count++;
+                            for (int k = 0; k < aisleArr.Count(); k++)
+                            {
+                                path[count] = aisleArr[k];
+                            }
                         }
                         else
                         {
