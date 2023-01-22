@@ -58,7 +58,7 @@ namespace ConsoleForms
                             string[] aisleArr = new string[999];
                             for (int j = 0; j < strList.Count(); j++)
                             {
-                                if (Aisle(strList[i])== 2)
+                                if (Aisle(strList[j])== 2)
                                 {
 
                                 }
