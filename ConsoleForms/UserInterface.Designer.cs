@@ -52,6 +52,7 @@
             this.FrozenPizza = new System.Windows.Forms.CheckBox();
             this.DogToys = new System.Windows.Forms.CheckBox();
             this.DogFood = new System.Windows.Forms.CheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Marker)).BeginInit();
             this.SuspendLayout();
@@ -383,6 +384,13 @@
             this.DogFood.TabIndex = 22;
             this.DogFood.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(77, 229);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(292, 273);
+            this.panel1.TabIndex = 23;
+            // 
             // UserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -410,6 +418,7 @@
             this.Controls.Add(this.Marker);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserInterface";
@@ -446,5 +455,6 @@
         public System.Windows.Forms.CheckBox FrozenPizza;
         public System.Windows.Forms.CheckBox DogToys;
         public System.Windows.Forms.CheckBox DogFood;
+        private System.Windows.Forms.Panel panel1;
     }
 }

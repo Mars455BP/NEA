@@ -14,14 +14,14 @@ namespace ConsoleForms
     public partial class PickList : Form
     {
         public int CountOfBoxes;
-        public PickList()
+        public PickList(string[] path)
         {
             
             InitializeComponent();
-            for (int i = 0; i < Program.strList.Length; i++)
+            for (int i = 0; i < path.Length; i++)
             {
-                checkedListBox1.Items.Add(Program.strList[i].ToString(), false);
-                Console.WriteLine(Program.strList[i].ToString() + " added to Pick List");
+                checkedListBox1.Items.Add(path[i].ToString(), false);
+                Console.WriteLine(path[i].ToString() + " added to Pick List");
             }
             CountOfBoxes = this.checkedListBox1.Items.Count;
             this.CenterToParent();

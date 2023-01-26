@@ -144,7 +144,7 @@ namespace ConsoleForms
         {
             Graphics gra = this.panel1.CreateGraphics();
             Pen pen = new Pen(Color.Black, 1);
-            e.Graphics.DrawLine(pen, Path.locationChecker('x', "Eggs")+'F', Path.locationChecker('y', "Eggs")+'F', Path.locationChecker('x', "Milk")+'F', Path.locationChecker('y', "Milk") + 'F');
+            e.Graphics.DrawLine(pen, Path.locationChecker('x', "Eggs")+'F', Path.locationChecker('y', "Eggs")+'F', Path.locationChecker('x', "Milk")+'F', Path.locationChecker('y', "Milk")+'F');
 
         }
 

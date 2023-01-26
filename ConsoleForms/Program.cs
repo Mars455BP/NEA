@@ -8,8 +8,8 @@ namespace ConsoleForms
 {
     class Program
     {
-        
 
+        
         public static int itemstopick;
         public static string[] strList = new string[999];
 
@@ -63,17 +63,19 @@ namespace ConsoleForms
             strList = selectList.returnList();
             //Creating Pick List
             Console.WriteLine("Pick List being created");
-            PickList PL = new PickList();
-            itemstopick = selectList.returnList().Length;
             Path path = new Path(strList);
             Console.WriteLine("Creating user interface");
+            Path path1 = new Path(strList);
             //Creating User Interface
             UserInterface UI = new UserInterface();
             UI.ShowDialog();
             Console.WriteLine("Showing UI");
-            Path path1 = new Path(strList);
+            
+            PickList PL = new PickList();
+            itemstopick = selectList.returnList().Length;
             Console.WriteLine("Using DISPLAY ARRAY");
             displayArray(path1.path);
+
             Console.ReadKey();
             
         }
