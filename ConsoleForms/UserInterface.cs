@@ -19,14 +19,15 @@ namespace ConsoleForms
         {
             InitializeComponent();
             //Changing colour of specified items
+
             for (int i = 0; i < Program.itemstopick; i++)
             {
-                Console.WriteLine(Program.strList[i] +" is the "+i + " item");
+                Console.WriteLine(Program.strList[i] + " is the " + i + " item");
                 switch (Program.strList[i])
                 {
                     case ("Eggs"):
                         Eggs.BackColor = Color.Green;
-                        
+
                         break;
                     case ("Cheese"):
                         Cheese.BackColor = Color.Green;
@@ -47,22 +48,22 @@ namespace ConsoleForms
                         BakedBeans.BackColor = Color.Green;
                         break;
                     case ("Chopped Tomatoes"):
-                        ChoppedTomatoes.BackColor= Color.Green;
+                        ChoppedTomatoes.BackColor = Color.Green;
                         break;
                     case ("Chilli Powder"):
-                        ChilliPowder.BackColor= Color.Green;
+                        ChilliPowder.BackColor = Color.Green;
                         break;
                     case ("Frozen Pizza"):
-                        FrozenPizza.BackColor= Color.Green;
+                        FrozenPizza.BackColor = Color.Green;
                         break;
                     case ("Ice Cream"):
-                        IceCream.BackColor= Color.Green;
+                        IceCream.BackColor = Color.Green;
                         break;
                     case ("Cat Food"):
-                        CatFood.BackColor= Color.Green;
+                        CatFood.BackColor = Color.Green;
                         break;
                     case ("Dog Toys"):
-                        DogToys.BackColor= Color.Green;
+                        DogToys.BackColor = Color.Green;
                         break;
                     case ("Dog Food"):
                         DogFood.BackColor = Color.Green;
@@ -71,13 +72,13 @@ namespace ConsoleForms
                         break;
                 }
             }
+
             
 
         }
-
         private void UserInterface_Load(object sender, EventArgs e)
         {
-
+    
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -141,6 +142,9 @@ namespace ConsoleForms
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
+            Graphics gra = this.panel1.CreateGraphics();
+            Pen pen = new Pen(Color.Black, 1);
+            e.Graphics.DrawLine(pen, Path.locationChecker('x', "Eggs")+'F', Path.locationChecker('y', "Eggs")+'F', Path.locationChecker('x', "Milk")+'F', Path.locationChecker('y', "Milk") + 'F');
 
         }
 
@@ -191,6 +195,11 @@ namespace ConsoleForms
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Apples_CheckedChanged(object sender, EventArgs e)
         {
 
         }

@@ -58,9 +58,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(-1, 590);
+            this.button1.Location = new System.Drawing.Point(-1, 726);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 45);
+            this.button1.Size = new System.Drawing.Size(119, 55);
             this.button1.TabIndex = 0;
             this.button1.Text = "Next Item";
             this.button1.UseVisualStyleBackColor = true;
@@ -71,8 +72,9 @@
             this.progressBar1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.progressBar1.ForeColor = System.Drawing.Color.Lime;
             this.progressBar1.Location = new System.Drawing.Point(-1, -1);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(358, 23);
+            this.progressBar1.Size = new System.Drawing.Size(477, 28);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 2;
             this.progressBar1.Click += new System.EventHandler(this.ProgressBar1_Click);
@@ -84,9 +86,10 @@
             // button2
             // 
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(281, 28);
+            this.button2.Location = new System.Drawing.Point(375, 34);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(76, 39);
+            this.button2.Size = new System.Drawing.Size(101, 48);
             this.button2.TabIndex = 4;
             this.button2.Text = "Pick List";
             this.button2.UseVisualStyleBackColor = true;
@@ -100,10 +103,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(57, -77);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(76, -95);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 751);
+            this.pictureBox1.Size = new System.Drawing.Size(293, 924);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -113,10 +116,10 @@
             // 
             this.Marker.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Marker.Image = ((System.Drawing.Image)(resources.GetObject("Marker.Image")));
-            this.Marker.Location = new System.Drawing.Point(72, 227);
-            this.Marker.Margin = new System.Windows.Forms.Padding(2);
+            this.Marker.Location = new System.Drawing.Point(96, 279);
+            this.Marker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Marker.Name = "Marker";
-            this.Marker.Size = new System.Drawing.Size(16, 18);
+            this.Marker.Size = new System.Drawing.Size(21, 22);
             this.Marker.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Marker.TabIndex = 7;
             this.Marker.TabStop = false;
@@ -131,8 +134,8 @@
             this.Milk.FlatAppearance.BorderSize = 0;
             this.Milk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Milk.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Milk.Location = new System.Drawing.Point(95, 265);
-            this.Milk.Margin = new System.Windows.Forms.Padding(2);
+            this.Milk.Location = new System.Drawing.Point(127, 326);
+            this.Milk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Milk.Name = "Milk";
             this.Milk.Size = new System.Drawing.Size(6, 6);
             this.Milk.TabIndex = 8;
@@ -149,8 +152,8 @@
             this.Cheese.FlatAppearance.BorderSize = 0;
             this.Cheese.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cheese.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Cheese.Location = new System.Drawing.Point(58, 316);
-            this.Cheese.Margin = new System.Windows.Forms.Padding(2);
+            this.Cheese.Location = new System.Drawing.Point(77, 389);
+            this.Cheese.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Cheese.Name = "Cheese";
             this.Cheese.Size = new System.Drawing.Size(6, 6);
             this.Cheese.TabIndex = 9;
@@ -166,8 +169,8 @@
             this.Eggs.FlatAppearance.BorderSize = 0;
             this.Eggs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Eggs.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Eggs.Location = new System.Drawing.Point(58, 345);
-            this.Eggs.Margin = new System.Windows.Forms.Padding(2);
+            this.Eggs.Location = new System.Drawing.Point(77, 425);
+            this.Eggs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Eggs.Name = "Eggs";
             this.Eggs.Size = new System.Drawing.Size(6, 6);
             this.Eggs.TabIndex = 10;
@@ -184,12 +187,13 @@
             this.Apples.FlatAppearance.BorderSize = 0;
             this.Apples.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Apples.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Apples.Location = new System.Drawing.Point(102, 316);
-            this.Apples.Margin = new System.Windows.Forms.Padding(2);
+            this.Apples.Location = new System.Drawing.Point(136, 389);
+            this.Apples.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Apples.Name = "Apples";
             this.Apples.Size = new System.Drawing.Size(6, 6);
             this.Apples.TabIndex = 11;
             this.Apples.UseVisualStyleBackColor = false;
+            this.Apples.CheckedChanged += new System.EventHandler(this.Apples_CheckedChanged);
             // 
             // Tomatoes
             // 
@@ -201,8 +205,8 @@
             this.Tomatoes.FlatAppearance.BorderSize = 0;
             this.Tomatoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Tomatoes.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Tomatoes.Location = new System.Drawing.Point(102, 227);
-            this.Tomatoes.Margin = new System.Windows.Forms.Padding(2);
+            this.Tomatoes.Location = new System.Drawing.Point(136, 279);
+            this.Tomatoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tomatoes.Name = "Tomatoes";
             this.Tomatoes.Size = new System.Drawing.Size(6, 6);
             this.Tomatoes.TabIndex = 12;
@@ -218,8 +222,8 @@
             this.Bananas.FlatAppearance.BorderSize = 0;
             this.Bananas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bananas.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Bananas.Location = new System.Drawing.Point(139, 295);
-            this.Bananas.Margin = new System.Windows.Forms.Padding(2);
+            this.Bananas.Location = new System.Drawing.Point(185, 363);
+            this.Bananas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bananas.Name = "Bananas";
             this.Bananas.Size = new System.Drawing.Size(6, 6);
             this.Bananas.TabIndex = 13;
@@ -235,8 +239,8 @@
             this.BakedBeans.FlatAppearance.BorderSize = 0;
             this.BakedBeans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BakedBeans.ForeColor = System.Drawing.Color.Cornsilk;
-            this.BakedBeans.Location = new System.Drawing.Point(146, 222);
-            this.BakedBeans.Margin = new System.Windows.Forms.Padding(2);
+            this.BakedBeans.Location = new System.Drawing.Point(195, 273);
+            this.BakedBeans.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BakedBeans.Name = "BakedBeans";
             this.BakedBeans.Size = new System.Drawing.Size(6, 6);
             this.BakedBeans.TabIndex = 14;
@@ -252,8 +256,8 @@
             this.Garlic.FlatAppearance.BorderSize = 0;
             this.Garlic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Garlic.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Garlic.Location = new System.Drawing.Point(183, 316);
-            this.Garlic.Margin = new System.Windows.Forms.Padding(2);
+            this.Garlic.Location = new System.Drawing.Point(244, 389);
+            this.Garlic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Garlic.Name = "Garlic";
             this.Garlic.Size = new System.Drawing.Size(6, 6);
             this.Garlic.TabIndex = 15;
@@ -269,8 +273,8 @@
             this.ChilliPowder.FlatAppearance.BorderSize = 0;
             this.ChilliPowder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ChilliPowder.ForeColor = System.Drawing.Color.Cornsilk;
-            this.ChilliPowder.Location = new System.Drawing.Point(183, 291);
-            this.ChilliPowder.Margin = new System.Windows.Forms.Padding(2);
+            this.ChilliPowder.Location = new System.Drawing.Point(244, 358);
+            this.ChilliPowder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChilliPowder.Name = "ChilliPowder";
             this.ChilliPowder.Size = new System.Drawing.Size(6, 6);
             this.ChilliPowder.TabIndex = 16;
@@ -286,8 +290,8 @@
             this.ChoppedTomatoes.FlatAppearance.BorderSize = 0;
             this.ChoppedTomatoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ChoppedTomatoes.ForeColor = System.Drawing.Color.Cornsilk;
-            this.ChoppedTomatoes.Location = new System.Drawing.Point(146, 264);
-            this.ChoppedTomatoes.Margin = new System.Windows.Forms.Padding(2);
+            this.ChoppedTomatoes.Location = new System.Drawing.Point(195, 325);
+            this.ChoppedTomatoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChoppedTomatoes.Name = "ChoppedTomatoes";
             this.ChoppedTomatoes.Size = new System.Drawing.Size(6, 6);
             this.ChoppedTomatoes.TabIndex = 17;
@@ -303,8 +307,8 @@
             this.IceCream.FlatAppearance.BorderSize = 0;
             this.IceCream.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IceCream.ForeColor = System.Drawing.Color.Cornsilk;
-            this.IceCream.Location = new System.Drawing.Point(226, 316);
-            this.IceCream.Margin = new System.Windows.Forms.Padding(2);
+            this.IceCream.Location = new System.Drawing.Point(301, 389);
+            this.IceCream.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IceCream.Name = "IceCream";
             this.IceCream.Size = new System.Drawing.Size(6, 6);
             this.IceCream.TabIndex = 18;
@@ -320,8 +324,8 @@
             this.CatFood.FlatAppearance.BorderSize = 0;
             this.CatFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CatFood.ForeColor = System.Drawing.Color.Cornsilk;
-            this.CatFood.Location = new System.Drawing.Point(232, 316);
-            this.CatFood.Margin = new System.Windows.Forms.Padding(2);
+            this.CatFood.Location = new System.Drawing.Point(309, 389);
+            this.CatFood.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CatFood.Name = "CatFood";
             this.CatFood.Size = new System.Drawing.Size(6, 6);
             this.CatFood.TabIndex = 19;
@@ -337,8 +341,8 @@
             this.FrozenPizza.FlatAppearance.BorderSize = 0;
             this.FrozenPizza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FrozenPizza.ForeColor = System.Drawing.Color.Cornsilk;
-            this.FrozenPizza.Location = new System.Drawing.Point(189, 250);
-            this.FrozenPizza.Margin = new System.Windows.Forms.Padding(2);
+            this.FrozenPizza.Location = new System.Drawing.Point(252, 308);
+            this.FrozenPizza.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FrozenPizza.Name = "FrozenPizza";
             this.FrozenPizza.Size = new System.Drawing.Size(6, 6);
             this.FrozenPizza.TabIndex = 20;
@@ -354,8 +358,8 @@
             this.DogToys.FlatAppearance.BorderSize = 0;
             this.DogToys.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DogToys.ForeColor = System.Drawing.Color.Cornsilk;
-            this.DogToys.Location = new System.Drawing.Point(269, 296);
-            this.DogToys.Margin = new System.Windows.Forms.Padding(2);
+            this.DogToys.Location = new System.Drawing.Point(359, 364);
+            this.DogToys.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DogToys.Name = "DogToys";
             this.DogToys.Size = new System.Drawing.Size(6, 6);
             this.DogToys.TabIndex = 21;
@@ -372,8 +376,8 @@
             this.DogFood.FlatAppearance.BorderSize = 0;
             this.DogFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DogFood.ForeColor = System.Drawing.Color.Cornsilk;
-            this.DogFood.Location = new System.Drawing.Point(269, 242);
-            this.DogFood.Margin = new System.Windows.Forms.Padding(2);
+            this.DogFood.Location = new System.Drawing.Point(359, 298);
+            this.DogFood.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DogFood.Name = "DogFood";
             this.DogFood.Size = new System.Drawing.Size(6, 6);
             this.DogFood.TabIndex = 22;
@@ -381,11 +385,11 @@
             // 
             // UserInterface
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(359, 638);
+            this.ClientSize = new System.Drawing.Size(479, 785);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.DogFood);
@@ -407,6 +411,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserInterface";
             this.Text = "UserInterface";
             this.Load += new System.EventHandler(this.UserInterface_Load);

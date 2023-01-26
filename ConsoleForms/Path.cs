@@ -114,7 +114,7 @@ namespace ConsoleForms
                 Console.WriteLine(arr[i]);
             }
         }
-        int locationChecker(char xy, string str)
+        public static int locationChecker(char xy, string str)
         {
             UserInterface values = new UserInterface();
             if (xy == 'x')
