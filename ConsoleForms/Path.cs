@@ -80,6 +80,10 @@ namespace ConsoleForms
                 }
             }
         }
+        string[] returnArr()
+        {
+            return path;
+        }
         string[] sortArr(string[] strArr, bool isUp)
         {
             string[] newStr = new string[strArr.Length];

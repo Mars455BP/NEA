@@ -70,7 +70,7 @@ namespace ConsoleForms
             UserInterface UI = new UserInterface();
             UI.ShowDialog();
             Console.WriteLine("Showing UI");
-            
+            strList = path1.path;
             PickList PL = new PickList();
             itemstopick = selectList.returnList().Length;
             Console.WriteLine("Using DISPLAY ARRAY");
